@@ -3,13 +3,26 @@ import Header from "./Header";
 import Order from "./Order";
 import MenuAdmin from "./MenuAdmin";
 import sampleBurgers from "../sample-burgers";
-import Burger from "./Burger.js";
+import Burger from "./Burger";
+import base from "../base";
 
 class App extends React.Component {
   state = {
     burgers: {},
     order: {},
   };
+
+  componentDidMount() {
+    const { params } = this.props.match;
+    this.ref = base.syncState(`${params.restaurantId}/burders`, {
+      context: this,
+      state: "burgers",
+    });
+  }
+
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
 
   addBurger = (burger) => {
     //1) Делаем копию объекта state
