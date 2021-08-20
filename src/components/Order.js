@@ -5,8 +5,9 @@ class Order extends React.Component {
   renderOrder = (key) => {
     const burger = this.props.burgers[key];
     const count = this.props.order[key];
-
     const isAvailable = burger && burger.status === "available";
+
+    if (!burger) return null;
     if (!isAvailable) {
       return (
         <li className="unavailable" key={key}>
@@ -32,8 +33,7 @@ class Order extends React.Component {
     const total = orderIds.reduce((prevTotal, key) => {
       const burger = this.props.burgers[key];
       const count = this.props.order[key];
-
-      const isAvailable = burger && burger.status == "available";
+      const isAvailable = burger && burger.status === "available";
 
       if (isAvailable) {
         return prevTotal + burger.price * count;
