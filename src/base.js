@@ -2,9 +2,9 @@ import Rebase from "re-base";
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyB4tv9IceLnkVe6B9Nknkq2iVg1hNj17u4",
-  authDomain: "hot-burgers-project-48f16.firebaseapp.com",
-  databaseURL: "https://hot-burgers-project-48f16-default-rtdb.firebaseio.com",
+  apiKey: "AIzaSyDPYVuMcvW-nN76yHBQn45I2HknY-Fy8cA",
+  authDomain: "myburgera.firebaseapp.com",
+  databaseURL: "https://myburgera-default-rtdb.firebaseio.com",
 });
 
 const base = Rebase.createClass(firebaseApp.database());
