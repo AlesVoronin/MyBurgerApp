@@ -55,9 +55,10 @@ const Landing = (props) => {
       ) : null}
     </div>
   );
-  Landing.propTypes = {
-    history: PropTypes.object,
-  };
+};
+
+Landing.propTypes = {
+  history: PropTypes.object,
 };
 
 export default Landing;

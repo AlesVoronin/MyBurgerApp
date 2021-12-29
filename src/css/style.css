@@ -239,7 +239,7 @@ header.top .header-content {
 }
 header.top .header-content .header-rating {
   padding: 4px 8px;
-  background-color: #ffe033;
+  background-color: #f2ba52;
   display: inline-flex;
   border-radius: 18px;
   align-items: center;
@@ -264,7 +264,7 @@ header.top .header-content h3 {
   font-size: 2rem;
 }
 header.top .header-content .sub-header {
-  color: #f00;
+  color: #f24405;
 }
 .burger-paradise {
   display: grid;
@@ -312,7 +312,7 @@ ul.order li button {
   line-height: 1;
   padding: 0 4px;
   background: transparent;
-  color: #f00;
+  color: #f24405;
 }
 ul.order li button:after {
   display: none;
@@ -384,7 +384,7 @@ ul.order li span.count span {
 .burger-edit textarea:focus,
 .burger-edit select:focus {
   outline: 0;
-  background: #fef2de;
+  background: #bf5f0b;
 }
 .burger-edit textarea {
   width: 100%;
@@ -439,7 +439,7 @@ input[type=submit] {
   text-transform: uppercase;
   padding: 0.8rem 1.5rem;
   border: none;
-  background: #f00;
+  background: #f24405;
   color: #fff;
   font-size: 1.4rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -450,10 +450,10 @@ input[type=submit] {
 }
 button[disabled],
 input[type=submit][disabled] {
-  color: #d12028;
+  color: #f24405;
   background: #fff;
   transform: rotate(-10deg) scale(1.5) translateX(40%) translateY(-50%);
-  border: 1px solid #d12028;
+  border: 1px solid #f24405;
 }
 button[disabled]:hover,
 input[type=submit][disabled]:hover {
@@ -469,7 +469,7 @@ input[type=submit]:after {
   content: '';
   z-index: -1;
   display: block;
-  background: #000;
+  background: #0d0d0d;
   position: absolute;
   width: 0;
   height: 100%;
@@ -492,11 +492,11 @@ input[type=submit]:focus:after {
 }
 button.warning:after,
 input[type=submit].warning:after {
-  background: #d12028;
+  background: #f24405;
 }
 button.success:after,
 input[type=submit].success:after {
-  background: #2dc22d;
+  background: #3c8c03;
 }
 button.github,
 input[type=submit].github {
@@ -607,5 +607,5 @@ input[type=submit].github {
 .restaurant_select_bottom ul li::before {
   content: '■';
   margin-right: 0.5rem;
-  color: #f00;
+  color: #f24405;
 }

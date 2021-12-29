@@ -46,7 +46,7 @@ class Order extends React.Component {
               </CSSTransition>
             </TransitionGroup>
             шт. {burger.name}
-            <span> {count * burger.price} ₽</span>
+            <span> {count * burger.price} BYN</span>
             <button
               onClick={() => this.props.deleteFromOrder(key)}
               className="cancellItem"

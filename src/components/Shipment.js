@@ -8,12 +8,14 @@ class Shipment extends React.Component {
 
   render() {
     const { total } = this.props;
-    const shipping = total > 0 && total < 500 ? 350 : 99;
+    const shipping = total > 0 && total < 30 ? 10 : 0;
     const shippingNeon =
       shipping === 99 ? (
-        <span className="font-effect-neon total_wrap-cheap">{shipping} ₽</span>
+        <span className="font-effect-neon total_wrap-cheap">
+          {shipping} BYN
+        </span>
       ) : (
-        <span>{shipping} ₽</span>
+        <span>{shipping} BYN</span>
       );
 
     return (
@@ -22,12 +24,12 @@ class Shipment extends React.Component {
           <div>
             <div>Доставка: {total > 0 ? shippingNeon : null}</div>
             <div className="total_warp-free">
-              {total < 500
-                ? `Закажите еще на ${500 - total} ₽ для доставки за 99 ₽`
+              {total < 30
+                ? `Закажите еще на ${30 - total} BYN для БЕСПЛАТНОЙ доставки`
                 : null}
             </div>
           </div>
-          <div className="total_wrap-final">Итого: {total} ₽</div>
+          <div className="total_wrap-final">Итого: {total + shipping} BYN</div>
         </div>
       </div>
     );
