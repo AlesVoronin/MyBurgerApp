@@ -7,7 +7,7 @@ const Header = (props) => (
       <div className="header-content">
         <div className="header-rating">
           <div className="header-rating_tag">Рейтинг:</div>
-          <div className="header-rating_icon">★★★★</div>
+          <div className="header-rating_icon">★★★★★</div>
         </div>
 
         <div className="header-divider" />
